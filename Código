@@ -1,0 +1,18 @@
+cargo = str(input("qual é o seu cargo: "))
+dia_da_semana = str(input("que dia é hoje: "))
+
+if dia_da_semana in ["segunda", "terça", "quarta", "quinta", "sexta", "sábado", "domingo"]:
+    if cargo == "gerente" and dia_da_semana in ["segunda", "terça", "quarta", "quinta", "sexta", "sábado", "domingo"]:
+        print("Seja bem vindo Gerente. Seu acesso é irrestrito ao nosso sistema")
+       
+    elif cargo == "analista" and dia_da_semana in ["segunda", "quarta", "sexta", "domingo"]:
+        print("Seja bem vindo Analista. Seu acesso alternado em nosso sistema")
+       
+    elif cargo == "estágiario" and dia_da_semana in ["segunda", "terça", "quarta", "quinta", "sexta"]:
+        print("Seja bem vindo Estágiario. Seu acesso é somente em dias úteis ao nosso sistema")
+       
+    else:
+        print("Acesso negado")
+       
+else:
+    print("Dia inválido")
