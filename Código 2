@@ -1,0 +1,26 @@
+Quantidade = int(input("Em quantas pessoas vocês estão ?: "))
+Cargo = str(input("Você pertence a um cargo executivo? "))
+
+if Quantidade >= 2 <= 5:
+    if Cargo == "sim.":
+        sala = ("Acesso autorizado a sala executiva caso queira usa-la.")
+    else:
+        sala = ("Dirija-se a sala pequena.")
+        
+elif Quantidade >= 6 <=10:
+    if Cargo == "sim.":
+        sala = ("Dirija-se a sala média")
+    
+elif Quantidade >= 11 <= 15:
+    if Cargo == "sim.":
+        sala = ("Acesso autorizado a sala executiva caso queira usa-la.")
+    else:
+        sala = ("Dirija-se sala grande.")
+        
+elif Quantidade >= 16 <= 20:
+    if Cargo == "sim.":
+        sala = ("Acesso autorizado a sala executiva.")
+    else:
+        sala = ("Marque um dia para usar a sala executiva")
+        
+print (sala)
