@@ -1,4 +1,4 @@
-cargo = str(input("qual é o seu cargo: "))
+cargo = str(input("qual é o seu cargo: ")).lower()
 dia_da_semana = str(input("que dia é hoje: "))
 
 if dia_da_semana in ["segunda", "terça", "quarta", "quinta", "sexta", "sábado", "domingo"]:
