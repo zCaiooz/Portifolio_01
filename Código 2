@@ -1,5 +1,5 @@
 Quantidade = int(input("Em quantas pessoas vocês estão ?: "))
-Cargo = str(input("Você pertence a um cargo executivo? (sim ou não) "))
+Cargo = str(input("Você pertence a um cargo executivo? (sim ou não) ")).lower()
 
 if 2 <= Quantidade <=6:
     if Cargo == "sim":
