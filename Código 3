@@ -1,0 +1,10 @@
+kilometros = int(input("quantos kilometros foram percorridos? "))
+litros = int(input("quantos litros você gastou? "))
+
+if litros > 0 and kilometros > 0:
+    resultado = kilometros/litros
+    print (resultado)
+
+else:
+    resultado = "valor inválido"
+    print(resultado)
