@@ -1,0 +1,18 @@
+def equipamento (departamento):
+    if departamento == "desenvolvimento de sistemas":
+        print ("Laptops com Alto desempenho")
+        
+    elif departamento == "marketing":
+        print("Tablets")
+        
+    elif departamento == "recursos sumanos":
+        print("Computadores desktop")
+        
+    elif departamento == "pesquisa e desenvolvimento":
+        print("Equipamentos de especificação de ultima geração")
+    
+    else:
+        print("Não temos recursos para este departamento")
+    
+depart = str(input("À qual departamento você pertence? ")).lower()
+equipamento (depart)
