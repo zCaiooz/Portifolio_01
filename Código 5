@@ -1,0 +1,16 @@
+def prioridade (valor_pedido: int, dias_para_entregar: int):
+    if 20 <= valor_pedido <= 100 or dias_para_entregar >= 7:
+        print ("normal")
+    
+    elif 100 <= valor_pedido <= 500 or 4 <= dias_para_entregar <= 7:
+        print ("prioritário")
+        
+    elif valor_pedido > 500 or dias_para_entregar <= 4:
+        print ("urgente")
+        
+    else:
+        print("Pedido muito barato, vai arrumar dinheiro seu otário")
+
+priority = ("Qual o valor do seu pedido? ")
+days = ("Quantos dias gostaria que seja entregue? ")
+prioridade = (priority)
