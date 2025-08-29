@@ -1,0 +1,9 @@
+site_3 = int(input("Quantas pessoas clicaram no 3 link ? "))
+
+if  site_3 >= 1:
+    resultado = 4*site_3
+    print (resultado)
+    print ("Resultado de clicks do site 1")
+else:
+    resultado = "valor inválido"
+    print (resultado)
