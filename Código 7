@@ -1,0 +1,12 @@
+Tempo = int(input("Quantas horas se passaram? "))
+Velocidade = int(input("Qual velocidade você estava aproximadamente? "))
+
+if Tempo >= 1:
+    if Velocidade >= 1:
+        Quilometros_percorrido = Velocidade*Tempo
+        print("Distâncica percorrida:", Quilometros_percorrido)
+    
+    else:
+        print("insira uma velocidade válida")
+else:
+    print("insira um tempo válido")
