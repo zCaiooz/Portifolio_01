@@ -1,12 +1,20 @@
-pista = int(input("Quantos metros tem a pista? "))
-corrida = int(input("Quantos metros você correu? "))
+try:
+    Competidores = int(input("Quantos competidores terá a competição? "))
+    Folhas = int(input("Quantas folhas foram compradas? "))
 
-if pista >= 1:
-    if corrida >=1:
-        fim_do_percurso = corrida % pista
-        print("A garrefa está em", fim_do_percurso, "metros.")
-    
+    if Competidores >= 2:
+        if Folhas >= 4:
+            Divisão = Folhas // Competidores
+            if Folhas < Competidores:
+                print("Folhas insuficientes")
+                
+            else:    
+                print ("Cada participante deve receber", Divisão, "folha(s), sobrando", Folhas % Competidores, "folha(s).")
+                
+        else:
+            print("Número de folhas insuficiente")
     else:
-        print("Insira uma quantidade em metros válida")
-else:
-    print("Insira uma quantidade em metros válida")
+        print("Insira uma quantidade válida de competidores")
+        
+except ValueError:
+    print("Apenas números inteiros")
