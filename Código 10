@@ -1,11 +1,14 @@
 try:
-    Número = int(input("Digite um número: "))
-    Número_2 = Número - 1
-    Número_3 = Número - 2
+    a = 0
+    b = 1
+    s = []
 
-    if Número >= 0:
-        Número = Número + Número_2 + Número_3
-        print (Número)
+    n = int(input("digite um número: "))
 
-except ValueError:
-    print ("Somente números inteiros")
+    while len (s) < n:
+        s.append(a)
+        a,b = b, a + b
+    print(s)
+    
+except:
+    print("Apenas números inteiros")
