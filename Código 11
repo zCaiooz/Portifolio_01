@@ -1,0 +1,19 @@
+Café = 20
+Sabonetes = 15
+Papel = 10
+Maças = 30
+Chocolates = 5
+
+Café = Café - 3
+Maças = Maças - 2
+    
+Chocolate = Chocolates + 10
+
+c = estoque = str(input("Gostaria de verificar o estoque ? ")).lower
+
+if c == "sim":
+    print("Estoque foi atualizado.", "Agora temos", Café, "quantidade de café,")
+print(Sabonetes, "Quantidade de sabonetes")
+print(Papel, "Quantidade de papel")
+print(Maças, "Quantidade de maças")
+print(Chocolates, "Quantidade de chocolates")
