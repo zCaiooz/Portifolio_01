@@ -1,0 +1,29 @@
+class Pessoa:
+    def __init__(self, nome, endereço, email):
+        self.nome = nome
+        self.endereço = endereço
+        self.email = email
+    
+class PessoaFísica(Pessoa):
+    def __init__(self, nome, endereço, email, cpf):
+        super().__init__(nome, endereço, email)
+        self.cpf = cpf
+    
+class PessoaJurídica(Pessoa):
+    def __init__(self, nome, endereço, email, cnpj):
+        super().__init__(nome, endereço, email)
+        self.cnpj = cnpj
+
+Pf = PessoaFísica ("Ricardo O. Silva", "Rua das Palmeiras - 450", "ricardo.silva@gmail.com", "953.432.918-018")
+Pj = PessoaJurídica ("Logística Horizonte Ágil S.A", "Alameda dos Pinheiros - 1.250", "administrativo@horizonteagil.com", "12.345.678/0001-90")
+print("DADOS (antes da alteração)")
+print(f"PF Nome: {Pf.nome}, Endereço: {Pf.endereço}, Email: {Pf.email}, CPF: {Pf.cpf} ")
+print(f"PJ Nome: {Pj.nome}, Endereço: {Pj.endereço}, Email: {Pj.email}, CNPJ: {Pj.cnpj}.")
+
+Pf.nome = "Ricardo Oliveira Silva"
+Pf.endereço = "Rua das Palmeiras, 450, Bairro Jardim, São Paulo - SP"
+Pj.endereço = "Alameda dos Pinheiros, 1.250, Bloco B, Porto Alegre - RS"
+
+print("DADOS (depois da alteração)")
+print(f"PF Nome: {Pf.nome}, Endereço: {Pf.endereço}, Email: {Pf.email}, CPF: {Pf.cpf} ")
+print(f"PJ Nome: {Pj.nome}, Endereço: {Pj.endereço}, Email: {Pj.email}, CNPJ: {Pj.cnpj}.")
